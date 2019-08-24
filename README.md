@@ -1,5 +1,7 @@
 This is an AngularJS module which provides a CSS gadget to display options in animated bubbles arranged in a circle.
-Preview: https://media.giphy.com/media/iehKXWnuRsXropciRe/giphy.gif
+![Preview](preview.gif?raw=true "Preview")
+
+https://media.giphy.com/media/iehKXWnuRsXropciRe/giphy.gif
 
 The module can be included as bubbleLib, and the gadget can be used as a directive bubbleGrid as :
 ```
