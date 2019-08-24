@@ -1,0 +1,13 @@
+<div class="sidebar-inner c-overflow">
+    <ul class="main-menu">
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="home" ><i class="zmdi zmdi-home"></i> Home</a>
+        </li>
+        <li class="sub-menu" data-ng-class="{ 'active': mactrl.$state.includes('demo')}">
+            <a href="" toggle-submenu="true"><i class="zmdi zmdi-group-work"></i>Bubble demo</a>
+            <ul>
+                <li ng-repeat="l in [7,12,35]"><a data-ng-class="{ 'active': mactrl.$state.includes('demo',{limit:{{l}}}) }" data-ui-sref="demo({limit:{{l}}})">{{l}} options</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

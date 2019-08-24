@@ -1,0 +1,39 @@
+.ajax-loader{
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.ajax-loading{display:block;}
+.ajax-not-loading{display:none}
+.loader-pic{
+    width: 100%;
+    height: 5px;
+    top: 0;
+    position: fixed;
+}
+.container.ng-enter, .container.ng-leave {
+    -webkit-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -o-transition:all .3s linear;
+    transition:all .3s linear;
+}
+
+.container.ng-enter {
+    opacity:0;
+}
+
+.container.ng-enter-active {
+    opacity: 1;
+}
+
+.container.ng-leave {
+    opacity: 1;
+}
+
+.container.ng-leave-active {
+    opacity: 0;
+}

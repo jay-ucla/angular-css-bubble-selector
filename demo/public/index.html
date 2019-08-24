@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html data-ng-app="demoApp" data-ng-controller="demoController as mactrl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bubble Demo</title>
+    <!-- VENDOR CSS -->
+    <link href="css/vendor/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/vendor/app.min.1.css" rel="stylesheet">
+    <link href="css/vendor/app.min.2.css" rel="stylesheet">
+	<link href="css/ajaxLoader.css" rel="stylesheet">
+</head>
+
+<body class="sw-toggled">
+    <header id="header" data-ng-include="'templates/header.html'" data-current-skin="blue" data-ng-controller="headerCtrl as hctrl"></header>
+    <section id="main">
+        <aside id="sidebar" data-ng-include="'templates/sidebar-admin.html'" data-ng-class="{ 'toggled': mactrl.sidebarToggle.left === true }"></aside>
+        <section id="content">
+            <div class="container" ui-view="content"></div>
+        </section>
+    </section>
+    <footer id="footer" data-ng-include="'templates/footer.html'"></footer>
+    <!-- Older IE warning message -->
+    <!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1 class="c-white">Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+    <![endif]-->
+    <div ui-view="bdModal"></div>
+</body>
+    <!-- Core -->
+    <script src="js/ext.min.js"></script>
+
+    <!-- App level -->
+    <script src="js/app.min.js"></script>
+
+    <!-- Vendor Libraries -->
+    <script src="js/vendors/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <script src="js/vendors/waves.min.js"></script>
+</html>
+
